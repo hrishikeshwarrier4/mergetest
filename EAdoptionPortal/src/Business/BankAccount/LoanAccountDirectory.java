@@ -12,14 +12,14 @@ import java.util.ArrayList;
  * @author hrishikeshwarrier
  */
 public class LoanAccountDirectory {
-        private ArrayList<Loan> loanList;
+        private ArrayList<Loan> loanList1;
 
     public LoanAccountDirectory() {
-        loanList = new ArrayList();
+        loanList1 = new ArrayList();
     }
 
     public ArrayList<Loan> getLoanAccountList() {
-        return loanList;
+        return loanList1;
     }
     
     
