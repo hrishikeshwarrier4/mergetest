@@ -14,7 +14,7 @@ import userinterface.CounselorRole.CounselorWorkAreaJPanel;
 
 /**
  *
- * @author nihil
+ * @author hrishikeshwarrier
  */
 public class CounselorRole extends Role{
 

@@ -15,7 +15,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author nihil
+ * @author hrishikeshwarrier
  */
 public class ValidateEmailTextField extends InputVerifier{
  

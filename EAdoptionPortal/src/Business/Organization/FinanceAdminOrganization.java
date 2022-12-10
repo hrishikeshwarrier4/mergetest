@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author nihil
+ * @author hrishikeshwarrier
  */
 public class FinanceAdminOrganization extends Organization{
 

@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author nihil
+ * @author hrishikeshwarrier
  */
 public class HospitalAdminRole extends Role{
 

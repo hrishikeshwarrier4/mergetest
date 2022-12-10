@@ -13,7 +13,7 @@ import userinterface.BankManager.BankManagerWorkAreaJPanel;
 
 /**
  *
- * @author nihil
+ * @author hrishikeshwarrier
  */
 public class BankManagerRole extends Role {
 
