@@ -302,7 +302,7 @@ public class registerMother extends javax.swing.JPanel {
         wq.addBirthMotherToCounselor(bmc);
         
 
-        String message =  " <h1>Welcomei To Child Adoption center</h1> <body>  Your Registration is successful <br>You have been alloted Counselor :"
+        String message =  " <h1>Welcomeii To Child Adoption center</h1> <body>  Your Registration is successful <br>You have been alloted Counselor :"
                 + c.getName() + " at "+ c.getAvailableTime() + "</br>"+"<br>Your Patient ID is " + birthMother.getId()
                 + "</br> <br> Kindly contact wait for your Counselor to contact you for your appointment details!</br> </body> <h2> Thank you! </h2>";
        
