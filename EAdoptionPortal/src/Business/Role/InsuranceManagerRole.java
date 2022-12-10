@@ -14,7 +14,7 @@ import userinterface.InsuranceManger.ViewInsuranceApplicationWorkAreaJPanel;
 
 /**
  *
- * @author nihil
+ * @author hrishikeshwarrier
  */
 public class InsuranceManagerRole extends Role{
 

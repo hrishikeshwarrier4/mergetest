@@ -14,7 +14,7 @@ import userinterface.BirthMotherRole.BirthMotherWorkAreaJPanel;
 
 /**
  *
- * @author nihil
+ * @author hrishikeshwarrier
  */
 public class BirthMotherRole extends Role{
       @Override

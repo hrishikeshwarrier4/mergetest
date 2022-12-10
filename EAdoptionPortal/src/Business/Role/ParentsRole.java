@@ -14,7 +14,7 @@ import userinterface.ParentsRole.ParentsWorkAreaJPanel;
 
 /**
  *
- * @author nihil
+ * @author hrishikeshwarrier
  */
 public class ParentsRole extends Role{
      @Override

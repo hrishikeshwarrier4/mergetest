@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author nihil
+ * @author hrishikeshwarrier
  */
 public class Counsellor extends Employee {
    private int workRequestCount;
