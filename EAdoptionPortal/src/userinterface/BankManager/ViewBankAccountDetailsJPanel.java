@@ -4,7 +4,7 @@
  */
 package userinterface.BankManager;
 
-import Business.BankAccount.Loan;
+import Business.BankAccount.BankLoan;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
 import Business.People.BirthMotherDirectory;
@@ -45,7 +45,7 @@ public class ViewBankAccountDetailsJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) workRequestJTable.getModel();
         
         model.setRowCount(0);
-        for (Loan request : enterprise.getLoanDirectory().getLoanAccountList()){
+        for (BankLoan request : enterprise.getLoanDirectory().getLoanAccountList()){
             Object[] row = new Object[4];
             row[0] = request;
             row[1] = request.getEmailId();
@@ -191,7 +191,7 @@ public class ViewBankAccountDetailsJPanel extends javax.swing.JPanel {
             return;
         }
         else{
-            Loan request = (Loan)workRequestJTable.getValueAt(selectedRow,0);
+            BankLoan request = (BankLoan)workRequestJTable.getValueAt(selectedRow,0);
             CardLayout layout = (CardLayout) userProcessContainer.getLayout();
             userProcessContainer.add("ViewBankAccount", new ViewBankAccount(userProcessContainer, userAccount, request ));
             layout.next(userProcessContainer);

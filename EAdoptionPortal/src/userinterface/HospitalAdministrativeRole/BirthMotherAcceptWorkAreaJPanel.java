@@ -4,7 +4,7 @@
  */
 package userinterface.HospitalAdministrativeRole;
 
-import Business.BankAccount.Loan;
+import Business.BankAccount.BankLoan;
 import Business.EmailGeneration.EmailFormat;
 import Business.Enterprise.Enterprise;
 import Business.Enterprise.FinancialEnterprise;

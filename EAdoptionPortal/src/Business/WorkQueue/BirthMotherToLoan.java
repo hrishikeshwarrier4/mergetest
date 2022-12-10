@@ -5,7 +5,7 @@
  */
 package Business.WorkQueue;
 
-import Business.BankAccount.Loan;
+import Business.BankAccount.BankLoan;
 import Business.People.BirthMother;
 import Business.People.Parents;
 
@@ -15,9 +15,9 @@ import Business.People.Parents;
  */
 public class BirthMotherToLoan extends WorkRequest{
     private BirthMother birthMother;
-    private Loan loan;
+    private BankLoan loan;
 
-    public BirthMotherToLoan(String message, Loan loan, BirthMother bm) {
+    public BirthMotherToLoan(String message, BankLoan loan, BirthMother bm) {
         super();
         super.setMessage(message);
         super.setStatus("Pending");
@@ -33,11 +33,11 @@ public class BirthMotherToLoan extends WorkRequest{
         this.birthMother = birthMother;
     }
     
-    public Loan getLoan() {
+    public BankLoan getLoan() {
         return loan;
     }
 
-    public void setLoan(Loan loan) {
+    public void setLoan(BankLoan loan) {
         this.loan = loan;
     }
 

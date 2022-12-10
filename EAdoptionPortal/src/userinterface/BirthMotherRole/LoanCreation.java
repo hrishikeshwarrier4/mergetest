@@ -5,7 +5,7 @@
  */
 package userinterface.BirthMotherRole;
 
-import Business.BankAccount.Loan;
+import Business.BankAccount.BankLoan;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
@@ -335,14 +335,14 @@ public class LoanCreation extends javax.swing.JPanel {
 //        
 //        }
                 
-        Loan loan = new Loan();
+        BankLoan loan = new BankLoan();
         for(Network network: system.getNetworkList()){
             if(network.getName().equals(userAccount.getNetwork()))
             {
                 for(Enterprise e : network.getEnterpriseDirectory().getEnterpriseList()){
                     if(e.getEnterpriseType().equals(Enterprise.EnterpriseType.FinancialEnterprise))
                     {
-                        for(Loan l : e.getLoanDirectory().getLoanAccountList())
+                        for(BankLoan l : e.getLoanDirectory().getLoanAccountList())
                             if(l.getFirstName().equals(userAccount.getName()))
                             { this.enterprise = e;
                                 l.addValues(emailId, funds, address, passportNumber, docPath);
@@ -355,7 +355,7 @@ public class LoanCreation extends javax.swing.JPanel {
             }
         }
         
-        //Initiated Loan amount Requested
+        //Initiated BankLoan amount Requested
         BirthMother.setLoanRequestAmount(funds);
         loan.setHospital(userAccount.getBirthmother().getHospital());
         BirthMotherToLoan motherLoan = new BirthMotherToLoan("Create new Loan", loan, userAccount.getBirthmother());

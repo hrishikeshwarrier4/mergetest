@@ -10,7 +10,7 @@ import java.util.Random;
  *
  * @author hrishikeshwarrier
  */
-public class Loan {
+public class BankLoan {
     
     private String firstName;
     private String lastName;
@@ -45,7 +45,7 @@ public class Loan {
 
     
 
-    public Loan(String firstName, String emailId) {
+    public BankLoan(String firstName, String emailId) {
         this.firstName = firstName;
         this.emailId = emailId;
         Random rand =  new Random();
@@ -87,7 +87,7 @@ public class Loan {
     }
     
 
-    public Loan() {
+    public BankLoan() {
         this.firstName = new String();
         this.emailId = new String();
         this.lastName = new String();

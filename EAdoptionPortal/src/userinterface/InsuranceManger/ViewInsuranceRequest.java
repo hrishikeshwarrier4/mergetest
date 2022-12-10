@@ -6,7 +6,7 @@
 package userinterface.InsuranceManger;
 
 import userinterface.BankManager.*;
-import Business.BankAccount.Loan;
+import Business.BankAccount.BankLoan;
 import Business.Enterprise.Enterprise;
 import Business.Insurance.Insurance;
 import Business.People.BirthMother;

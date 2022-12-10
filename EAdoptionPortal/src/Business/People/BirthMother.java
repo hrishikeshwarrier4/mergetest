@@ -4,7 +4,7 @@
  */
 package Business.People;
 
-import Business.BankAccount.Loan;
+import Business.BankAccount.BankLoan;
 import Business.Insurance.Insurance;
 import java.util.ArrayList;
 import java.util.Random;
@@ -62,7 +62,7 @@ public class BirthMother {
         this.contactMother = contactMother;
     }
     
-    private Loan loanaccount;
+    private BankLoan loanaccount;
 
     public int getRequiredFund() {
         return requiredFund;
@@ -133,7 +133,7 @@ public class BirthMother {
         this.parentAidfund = parentAidfund;
     }
 
-    public Loan getLoanaccount() {
+    public BankLoan getLoanaccount() {
         return loanaccount;
     }
 
@@ -145,7 +145,7 @@ public class BirthMother {
         this.finalizedParent = finalizedParent;
     }
 
-    public void setLoanaccount(Loan loanaccount) {
+    public void setLoanaccount(BankLoan loanaccount) {
         this.loanaccount = loanaccount;
     }
 
@@ -231,7 +231,7 @@ public class BirthMother {
         this.emailId =new String();
         this.password =new String();
         this.username =new String();
-        this.loanaccount = new Loan();
+        this.loanaccount = new BankLoan();
         this.insurance = new Insurance();
         acceptedParents = new ArrayList<>();
      this.requiredFund =0;

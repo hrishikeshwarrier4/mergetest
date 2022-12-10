@@ -5,7 +5,7 @@
  */
 package userinterface.BankManager;
 
-import Business.BankAccount.Loan;
+import Business.BankAccount.BankLoan;
 import static Business.ConfigureSystem.system;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
@@ -200,9 +200,9 @@ public class BankAccountCreate extends javax.swing.JPanel {
         this.counselor = txtCounselor.getText();
         this.hospital = txtHospital.getText();
            
-        Loan loan= new Loan();
+        BankLoan loan= new BankLoan();
         
-        loan = new Loan(req.getBirthMother().getFirstName(), req.getBirthMother().getEmailId());
+        loan = new BankLoan(req.getBirthMother().getFirstName(), req.getBirthMother().getEmailId());
         loan.setHospital(hospital);
         loan.setCounselor(counselor);
         enterprise.getLoanDirectory().addLoan(loan);

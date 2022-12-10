@@ -5,7 +5,7 @@
  */
 package userinterface.BankManager;
 
-import Business.BankAccount.Loan;
+import Business.BankAccount.BankLoan;
 import static Business.ConfigureSystem.system;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
@@ -39,10 +39,10 @@ public class ViewBankAccount extends javax.swing.JPanel {
     private String counselor;
     private String  hospital;
     private String emailId;
-    private Loan loan;
+    private BankLoan loan;
 
     
-    public ViewBankAccount(JPanel userProcessContainer,UserAccount userAccount, Loan loan) {
+    public ViewBankAccount(JPanel userProcessContainer,UserAccount userAccount, BankLoan loan) {
         initComponents();
         this.userAccount = userAccount;
         this.loan = loan;
