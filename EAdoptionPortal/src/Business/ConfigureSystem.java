@@ -25,7 +25,7 @@ public class ConfigureSystem {
     public static EcoSystem configure(){
         system = EcoSystem.getInstance();     
         Employee employee = system.getEmployeeDirectory().createandaddEmployee("sysadmin");
-        UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
+        UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin1", "sysadmin", employee, new SystemAdminRole());
         ConfigureSystem configure = new ConfigureSystem();
         configure.configureNetwork();
         return system;
