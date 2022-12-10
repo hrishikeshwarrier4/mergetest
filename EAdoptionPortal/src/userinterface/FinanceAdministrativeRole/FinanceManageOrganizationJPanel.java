@@ -4,7 +4,7 @@
  */
 package userinterface.FinanceAdministrativeRole;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.Organization.Organization.Type;
 import Business.Organization.OrganizationDirectory;
@@ -23,11 +23,11 @@ public class FinanceManageOrganizationJPanel extends javax.swing.JPanel {
     private OrganizationDirectory directory;
     private JPanel userProcessContainer;
     private UserAccount account;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     /**
      * Creates new form ManageOrganizationJPanel
      */
-    public FinanceManageOrganizationJPanel(JPanel userProcessContainer,UserAccount account, Enterprise enterprise) {
+    public FinanceManageOrganizationJPanel(JPanel userProcessContainer,UserAccount account, Enterprise1 enterprise) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.account = account;

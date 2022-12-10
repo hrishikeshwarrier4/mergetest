@@ -5,7 +5,7 @@
  */
 package userinterface.CounselorRole;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.People.BirthMother;
 import Business.People.BirthMotherDirectory;
 import Business.UserAccount.UserAccount;
@@ -26,7 +26,7 @@ public class ViewBirthMotherJPanel extends javax.swing.JPanel {
     public BirthMotherDirectory birthMotherDirectory;
     public BirthMother birthMother;
     public BirthMotherToCounselor bmWorkQueue;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private UserAccount account;
     private BirthMotherToCounselor request;
     
@@ -37,7 +37,7 @@ public class ViewBirthMotherJPanel extends javax.swing.JPanel {
     JPanel userProcessContainer;
     
 
-    public ViewBirthMotherJPanel(JPanel userProcessContainer, BirthMotherToCounselor bmc, UserAccount account, Enterprise enterprise) {
+    public ViewBirthMotherJPanel(JPanel userProcessContainer, BirthMotherToCounselor bmc, UserAccount account, Enterprise1 enterprise) {
         
         initComponents();
         this.userProcessContainer = userProcessContainer;

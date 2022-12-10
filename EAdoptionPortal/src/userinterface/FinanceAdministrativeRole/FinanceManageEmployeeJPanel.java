@@ -5,7 +5,7 @@
 package userinterface.FinanceAdministrativeRole;
 
 import userinterface.HospitalAdministrativeRole.*;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.People.Employee;
 import Business.Organization.Organization;
 import Business.Role.Role;
@@ -22,13 +22,13 @@ import javax.swing.table.DefaultTableModel;
  */
 public class FinanceManageEmployeeJPanel extends javax.swing.JPanel {
 
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private JPanel userProcessContainer;
     
     /**
      * Creates new form ManageOrganizationJPanel
      */
-    public FinanceManageEmployeeJPanel(JPanel userProcessContainer,Enterprise enterprise) {
+    public FinanceManageEmployeeJPanel(JPanel userProcessContainer,Enterprise1 enterprise) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.enterprise = enterprise;

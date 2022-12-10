@@ -7,7 +7,7 @@ package userinterface.Register;
 
 import Business.EcoSystem;
 import Business.EmailGeneration.EmailFormat;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Enterprise.HospitalEnterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
@@ -50,7 +50,7 @@ public class registerFamily extends javax.swing.JPanel {
     private boolean guilt;
     private ParentsDirectory parentDirectory;
     private ParentToCounselor parentToCounselor;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private Organization organization;
     
     
@@ -534,8 +534,8 @@ public class registerFamily extends javax.swing.JPanel {
         }
         
         for (Network n : system.getNetworkList()){
-            for (Enterprise e : n.getEnterpriseDirectory().getEnterpriseList()){
-                if (e.getEnterpriseType().equals(Enterprise.EnterpriseType.Hospital)){
+            for (Enterprise1 e : n.getEnterpriseDirectory().getEnterpriseList()){
+                if (e.getEnterpriseType().equals(Enterprise1.EnterpriseType.Hospital)){
                     for(UserAccount ua : e.getUserAccountDirectory().getUserAccountList()){
                         if(ua.getUsername().equals(username)){
                              JOptionPane.showMessageDialog(null, "User Name already exists!, Please Enter valid user name","warning", JOptionPane.WARNING_MESSAGE);
@@ -624,8 +624,8 @@ private void populateComboBox() {
         //hospitalJComboBox.removeAllItems();
         hospitalJComboBox.removeAllItems();
         for(Network n: system.getNetworkList()){
-            for(Enterprise e: n.getEnterpriseDirectory().getEnterpriseList()){
-                if(e.getEnterpriseType().equals(Enterprise.EnterpriseType.Hospital)){
+            for(Enterprise1 e: n.getEnterpriseDirectory().getEnterpriseList()){
+                if(e.getEnterpriseType().equals(Enterprise1.EnterpriseType.Hospital)){
                     hospitalJComboBox.addItem(e);
                 }    
             }

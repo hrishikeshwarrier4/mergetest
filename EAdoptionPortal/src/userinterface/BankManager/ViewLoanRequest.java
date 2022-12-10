@@ -5,8 +5,8 @@
  */
 package userinterface.BankManager;
 
-import Business.BankAccount.BankLoan;
-import Business.Enterprise.Enterprise;
+import Business.BankAccount.Loan;
+import Business.Enterprise.Enterprise1;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.BirthMotherToLoan;
 import java.awt.BorderLayout;
@@ -31,12 +31,12 @@ public class ViewLoanRequest extends javax.swing.JPanel {
 
     private UserAccount userAccount;
     private JPanel userProcessContainer;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private BirthMotherToLoan bl;
      
 
     
-    public ViewLoanRequest(JPanel userProcessContainer,UserAccount userAccount, BirthMotherToLoan bl, Enterprise enterprise) {
+    public ViewLoanRequest(JPanel userProcessContainer,UserAccount userAccount, BirthMotherToLoan bl, Enterprise1 enterprise) {
         initComponents();
         this.userAccount = userAccount;
         this.bl = bl;
@@ -342,7 +342,7 @@ public class ViewLoanRequest extends javax.swing.JPanel {
 
     private void btnApproveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApproveActionPerformed
         int accNumber = bl.getLoan().getBankAccountNumber();
-        for (BankLoan l : enterprise.getLoanDirectory().getLoanAccountList()){
+        for (Loan l : enterprise.getLoanDirectory().getLoanAccountList()){
             if(accNumber == (l.getBankAccountNumber()))
             {
             l.setFundsApproved(Integer.valueOf(txtApprovedAmount.getText()));

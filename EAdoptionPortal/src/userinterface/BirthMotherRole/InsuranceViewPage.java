@@ -6,7 +6,7 @@
 package userinterface.BirthMotherRole;
 
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Insurance.Insurance;
 import Business.Insurance.InsuranceAccountDirectory;
 import Business.Network.Network;
@@ -52,10 +52,10 @@ public class InsuranceViewPage extends javax.swing.JPanel {
     private String username;
     private EcoSystem system;
     private Network network;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     
     
-    public InsuranceViewPage(UserAccount userAccount, JPanel userProcessContainer, Enterprise enterprise, EcoSystem system) {
+    public InsuranceViewPage(UserAccount userAccount, JPanel userProcessContainer, Enterprise1 enterprise, EcoSystem system) {
         initComponents();
         this.userAccount = userAccount;
         this.BirthMother = userAccount.getBirthmother();
@@ -70,8 +70,8 @@ public class InsuranceViewPage extends javax.swing.JPanel {
 //        
 //        for(Network n : system.getNetworkList()){
 //            if(n.getName().equals(userAccount.getNetwork())){
-//                for(Enterprise e : n.getEnterpriseDirectory().getEnterpriseList()){
-//                    if(e.getEnterpriseType().equals(Enterprise.EnterpriseType.FinancialEnterprise)){
+//                for(Enterprise1 e : n.getEnterpriseDirectory().getEnterpriseList()){
+//                    if(e.getEnterpriseType().equals(Enterprise1.EnterpriseType.FinancialEnterprise)){
 //                       insuranceDirectory =  e.getInsuranceAccountDirectory();
 //                    
 //                    }
@@ -345,8 +345,8 @@ public class InsuranceViewPage extends javax.swing.JPanel {
         for(Network network: system.getNetworkList()){
             if(network.getName().equals(userAccount.getNetwork()))
             {
-                for(Enterprise e : network.getEnterpriseDirectory().getEnterpriseList()){
-                    if(e.getEnterpriseType().equals(Enterprise.EnterpriseType.FinancialEnterprise))
+                for(Enterprise1 e : network.getEnterpriseDirectory().getEnterpriseList()){
+                    if(e.getEnterpriseType().equals(Enterprise1.EnterpriseType.FinancialEnterprise))
                     {
                             this.enterprise = e;
                                nw.setHospital(userAccount.getBirthmother().getHospital());

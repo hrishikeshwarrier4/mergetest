@@ -4,7 +4,7 @@
  */
 package userinterface.FinanceAdministrativeRole;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.People.BankManager;
 import Business.People.InsuranceManager;
@@ -28,10 +28,10 @@ public class FinanceManageUserAccountJPanel extends javax.swing.JPanel {
      * Creates new form FinanceManageUserAccountJPanel
      */
     private JPanel container;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private UserAccount userAccount;
 
-    public FinanceManageUserAccountJPanel(JPanel container, Enterprise enterprise,  UserAccount account) {
+    public FinanceManageUserAccountJPanel(JPanel container, Enterprise1 enterprise,  UserAccount account) {
         initComponents();
         this.enterprise = enterprise;
         this.container = container;

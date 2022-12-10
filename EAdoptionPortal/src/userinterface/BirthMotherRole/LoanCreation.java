@@ -7,7 +7,7 @@ package userinterface.BirthMotherRole;
 
 import Business.BankAccount.BankLoan;
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Network.Network;
 import Business.People.BirthMother;
 import Business.UserAccount.UserAccount;
@@ -39,7 +39,7 @@ public class LoanCreation extends javax.swing.JPanel {
     private String passportNumber;
     private String username;
     private String docPath;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     
     public LoanCreation(UserAccount userAccount, JPanel userProcessContainer, EcoSystem system) {
         initComponents();
@@ -339,8 +339,8 @@ public class LoanCreation extends javax.swing.JPanel {
         for(Network network: system.getNetworkList()){
             if(network.getName().equals(userAccount.getNetwork()))
             {
-                for(Enterprise e : network.getEnterpriseDirectory().getEnterpriseList()){
-                    if(e.getEnterpriseType().equals(Enterprise.EnterpriseType.FinancialEnterprise))
+                for(Enterprise1 e : network.getEnterpriseDirectory().getEnterpriseList()){
+                    if(e.getEnterpriseType().equals(Enterprise1.EnterpriseType.FinancialEnterprise))
                     {
                         for(BankLoan l : e.getLoanDirectory().getLoanAccountList())
                             if(l.getFirstName().equals(userAccount.getName()))

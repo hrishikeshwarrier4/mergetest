@@ -12,7 +12,7 @@ import java.util.ArrayList;
  *
  * @author hrishikeshwarrier
  */
-public class FinancialEnterprise extends Enterprise {
+public class FinancialEnterprise extends Enterprise1 {
     
     public FinancialEnterprise(String name){
         super(name,EnterpriseType.FinancialEnterprise);

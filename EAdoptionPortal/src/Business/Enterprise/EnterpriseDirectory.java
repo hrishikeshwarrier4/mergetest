@@ -12,38 +12,38 @@ import java.util.ArrayList;
  * @author hrishikeshwarrier
  */
 public class EnterpriseDirectory {
-    private ArrayList<Enterprise> enterpriseList;
+    private ArrayList<Enterprise1> enterpriseList;
    
 
-    public ArrayList<Enterprise> getEnterpriseList() {
+    public ArrayList<Enterprise1> getEnterpriseList() {
         return enterpriseList;
     }
 
-    public void setEnterpriseList(ArrayList<Enterprise> enterpriseList) {
+    public void setEnterpriseList(ArrayList<Enterprise1> enterpriseList) {
         this.enterpriseList = enterpriseList;
     }
     
     public EnterpriseDirectory(){
-        enterpriseList=new ArrayList<Enterprise>();
+        enterpriseList=new ArrayList<Enterprise1>();
     }
     
-   //Creating and initializing Enterprise
-    public Enterprise createAndAddEnterprise(String name,Enterprise.EnterpriseType type){
-        Enterprise enterprise = null;
-        if(type==Enterprise.EnterpriseType.Hospital){
+   //Creating and initializing Enterprise1
+    public Enterprise1 createAndAddEnterprise(String name,Enterprise1.EnterpriseType type){
+        Enterprise1 enterprise = null;
+        if(type==Enterprise1.EnterpriseType.Hospital){
             enterprise=new HospitalEnterprise(name);
             enterprise.setEnterpriseType(type);
             enterpriseList.add(enterprise);
             return enterprise;
         }
-        if(type==Enterprise.EnterpriseType.FinancialEnterprise){
+        if(type==Enterprise1.EnterpriseType.FinancialEnterprise){
 
             enterprise=new FinancialEnterprise(name);
             enterprise.setEnterpriseType(type);
             enterpriseList.add(enterprise);
             return enterprise;
         }
-         if(type==Enterprise.EnterpriseType.OrphanageEnterprise){
+         if(type==Enterprise1.EnterpriseType.OrphanageEnterprise){
             enterprise=new OrphangeEnterprise(name);
             enterprise.setEnterpriseType(type);
             enterpriseList.add(enterprise);
@@ -52,7 +52,7 @@ public class EnterpriseDirectory {
         return null;
     }
     public boolean containsName(String type){
-        for (Enterprise org : enterpriseList){
+        for (Enterprise1 org : enterpriseList){
             if(org.getName().equals(type)){
                 return true;
             }

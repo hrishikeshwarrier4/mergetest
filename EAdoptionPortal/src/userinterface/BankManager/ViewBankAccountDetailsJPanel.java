@@ -4,8 +4,8 @@
  */
 package userinterface.BankManager;
 
-import Business.BankAccount.BankLoan;
-import Business.Enterprise.Enterprise;
+import Business.BankAccount.Loan;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.People.BirthMotherDirectory;
 import Business.UserAccount.UserAccount;
@@ -23,13 +23,13 @@ import javax.swing.table.DefaultTableModel;
 public class ViewBankAccountDetailsJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private UserAccount userAccount;
    
     /**
      * Creates new form DoctorWorkAreaJPanel
      */
-    public ViewBankAccountDetailsJPanel(JPanel userProcessContainer, UserAccount account, Enterprise enterprise) {
+    public ViewBankAccountDetailsJPanel(JPanel userProcessContainer, UserAccount account, Enterprise1 enterprise) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
@@ -45,7 +45,7 @@ public class ViewBankAccountDetailsJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) workRequestJTable.getModel();
         
         model.setRowCount(0);
-        for (BankLoan request : enterprise.getLoanDirectory().getLoanAccountList()){
+        for (Loan request : enterprise.getLoanDirectory().getLoanAccountList()){
             Object[] row = new Object[4];
             row[0] = request;
             row[1] = request.getEmailId();
@@ -191,7 +191,7 @@ public class ViewBankAccountDetailsJPanel extends javax.swing.JPanel {
             return;
         }
         else{
-            BankLoan request = (BankLoan)workRequestJTable.getValueAt(selectedRow,0);
+            Loan request = (Loan)workRequestJTable.getValueAt(selectedRow,0);
             CardLayout layout = (CardLayout) userProcessContainer.getLayout();
             userProcessContainer.add("ViewBankAccount", new ViewBankAccount(userProcessContainer, userAccount, request ));
             layout.next(userProcessContainer);

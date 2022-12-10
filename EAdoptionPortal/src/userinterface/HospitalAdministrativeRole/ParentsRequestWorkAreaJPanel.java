@@ -5,7 +5,7 @@
 package userinterface.HospitalAdministrativeRole;
 
 import Business.EmailGeneration.EmailFormat;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.CounselorOrganization;
 import Business.Organization.Organization;
 import Business.People.Parents;
@@ -29,14 +29,14 @@ public class ParentsRequestWorkAreaJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private CounselorOrganization organization;
     private UserAccount account;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
 
     private Parents parent;
     
     /**
      * Creates new form DoctorWorkAreaJPanel
      */
-    public ParentsRequestWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Enterprise enterprise) {
+    public ParentsRequestWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Enterprise1 enterprise) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;

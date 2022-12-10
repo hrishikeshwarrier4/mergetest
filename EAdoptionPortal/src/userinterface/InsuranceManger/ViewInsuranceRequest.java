@@ -6,8 +6,8 @@
 package userinterface.InsuranceManger;
 
 import userinterface.BankManager.*;
-import Business.BankAccount.BankLoan;
-import Business.Enterprise.Enterprise;
+import Business.BankAccount.Loan;
+import Business.Enterprise.Enterprise1;
 import Business.Insurance.Insurance;
 import Business.People.BirthMother;
 import Business.UserAccount.UserAccount;
@@ -36,12 +36,12 @@ public class ViewInsuranceRequest extends javax.swing.JPanel {
 
     private UserAccount userAccount;
     private JPanel userProcessContainer;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private BirthMotherToInsuranceManager insuranceRequest;
     private BirthMother birthmother;
 
     
-    public ViewInsuranceRequest(JPanel userProcessContainer,UserAccount userAccount, BirthMotherToInsuranceManager bmTim, Enterprise enterprise) {
+    public ViewInsuranceRequest(JPanel userProcessContainer,UserAccount userAccount, BirthMotherToInsuranceManager bmTim, Enterprise1 enterprise) {
         initComponents();
         this.userAccount = userAccount;
         this.insuranceRequest = bmTim;

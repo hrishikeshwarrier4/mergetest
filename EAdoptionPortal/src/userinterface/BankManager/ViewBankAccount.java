@@ -7,7 +7,7 @@ package userinterface.BankManager;
 
 import Business.BankAccount.BankLoan;
 import static Business.ConfigureSystem.system;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Network.Network;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.BirthMotherToLoan;

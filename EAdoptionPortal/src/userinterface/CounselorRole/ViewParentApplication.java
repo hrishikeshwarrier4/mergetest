@@ -5,7 +5,7 @@
  */
 package userinterface.CounselorRole;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.CounselorToAdmin;
 import Business.WorkQueue.ParentToCounselor;
@@ -27,9 +27,9 @@ public class ViewParentApplication extends javax.swing.JPanel {
     JPanel userProcessContainer;
     ParentToCounselor request;
     private UserAccount account;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     
-    public ViewParentApplication(JPanel userProcessContainer, ParentToCounselor request, UserAccount account, Enterprise e) {
+    public ViewParentApplication(JPanel userProcessContainer, ParentToCounselor request, UserAccount account, Enterprise1 e) {
         this.userProcessContainer = userProcessContainer;
         this.request = request;
         this.account = account;

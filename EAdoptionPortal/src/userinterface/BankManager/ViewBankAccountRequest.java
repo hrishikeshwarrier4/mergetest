@@ -4,7 +4,7 @@
  */
 package userinterface.BankManager;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.HospitalAdminToBank;
@@ -22,12 +22,12 @@ public class ViewBankAccountRequest extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private Organization organization;
     private UserAccount userAccount;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
 
     /**
      * Creates new form ViewLoanApplicationWorkAreaJPanel
      */
-    public ViewBankAccountRequest(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise) {
+    public ViewBankAccountRequest(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise1 enterprise) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;

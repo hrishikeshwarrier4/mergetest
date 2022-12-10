@@ -4,7 +4,7 @@
  */
 package userinterface.BirthMotherRole;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.People.BirthMother;
 import Business.People.Parents;
@@ -23,10 +23,10 @@ import javax.swing.table.DefaultTableModel;
 public class ViewParentDirectory extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private UserAccount userAccount;
     private BirthMother birthMother;
-    public ViewParentDirectory(JPanel userProcessContainer, UserAccount userAccount, BirthMother birthMother, Enterprise enterprise ) {
+    public ViewParentDirectory(JPanel userProcessContainer, UserAccount userAccount, BirthMother birthMother, Enterprise1 enterprise ) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.birthMother = birthMother;

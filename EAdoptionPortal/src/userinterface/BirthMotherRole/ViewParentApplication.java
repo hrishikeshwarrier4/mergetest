@@ -5,7 +5,7 @@
  */
 package userinterface.BirthMotherRole;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.People.BirthMother;
 import Business.People.Parents;
 import Business.WorkQueue.BirthMotherToParent;
@@ -27,10 +27,10 @@ public class ViewParentApplication extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private BirthMotherToParent request;
     private Parents parent;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private BirthMother birthMother;
     
-    public ViewParentApplication(JPanel userProcessContainer, Parents p, BirthMother birthMother,Enterprise enterprise) {
+    public ViewParentApplication(JPanel userProcessContainer, Parents p, BirthMother birthMother,Enterprise1 enterprise) {
         this.userProcessContainer = userProcessContainer;
         this.enterprise = enterprise;
         this.birthMother = birthMother;

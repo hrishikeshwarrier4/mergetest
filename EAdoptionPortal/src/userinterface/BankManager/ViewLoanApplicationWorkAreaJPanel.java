@@ -4,7 +4,7 @@
  */
 package userinterface.BankManager;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import userinterface.CounselorRole.*;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
@@ -25,11 +25,11 @@ public class ViewLoanApplicationWorkAreaJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private Organization organization;
     private UserAccount userAccount;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     /**
      * Creates new form ViewLoanApplicationWorkAreaJPanel
      */
-    public ViewLoanApplicationWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Enterprise enterprise) {
+    public ViewLoanApplicationWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Enterprise1 enterprise) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
