@@ -4,7 +4,7 @@
  */
 package userinterface.InsuranceManger;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.BirthMotherToInsuranceManager;
@@ -22,12 +22,12 @@ public class ViewInsuranceApplicationWorkAreaJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private Organization organization;
     private UserAccount userAccount;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private BirthMotherToInsuranceManager birthMotherToInsurance;
     /**
      * Creates new form ViewLoanApplicationWorkAreaJPanel
      */
-    public ViewInsuranceApplicationWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, UserAccount account) {
+    public ViewInsuranceApplicationWorkAreaJPanel(JPanel userProcessContainer, Enterprise1 enterprise, UserAccount account) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;

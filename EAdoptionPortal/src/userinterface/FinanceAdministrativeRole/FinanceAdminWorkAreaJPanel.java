@@ -4,7 +4,7 @@ package userinterface.FinanceAdministrativeRole;
 
 import userinterface.HospitalAdministrativeRole.*;
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
@@ -16,11 +16,11 @@ import javax.swing.JPanel;
 public class FinanceAdminWorkAreaJPanel extends javax.swing.JPanel {
     
     JPanel userProcessContainer;
-    Enterprise enterprise;
+    Enterprise1 enterprise;
     UserAccount account;
  
     /** Creates new form AdminWorkAreaJPanel */
-    public FinanceAdminWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, UserAccount account) {
+    public FinanceAdminWorkAreaJPanel(JPanel userProcessContainer, Enterprise1 enterprise, UserAccount account) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.enterprise = enterprise;

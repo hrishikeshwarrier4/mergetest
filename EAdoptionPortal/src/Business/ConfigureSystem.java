@@ -1,6 +1,6 @@
 package Business;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Enterprise.FinancialEnterprise;
 import Business.Enterprise.HospitalEnterprise;
 import Business.Network.Network;
@@ -39,8 +39,8 @@ public class ConfigureSystem {
         network.setCity("Boston");
         network.setName("Boston Network");
     // Boston   
-        HospitalEnterprise hospital = (HospitalEnterprise)network.getEnterpriseDirectory().createAndAddEnterprise("Boston Public Hospital", Enterprise.EnterpriseType.Hospital);
-        FinancialEnterprise financial = (FinancialEnterprise)network.getEnterpriseDirectory().createAndAddEnterprise("Boston Public Finance Center", Enterprise.EnterpriseType.FinancialEnterprise);
+        HospitalEnterprise hospital = (HospitalEnterprise)network.getEnterpriseDirectory().createAndAddEnterprise("Boston Public Hospital", Enterprise1.EnterpriseType.Hospital);
+        FinancialEnterprise financial = (FinancialEnterprise)network.getEnterpriseDirectory().createAndAddEnterprise("Boston Public Finance Center", Enterprise1.EnterpriseType.FinancialEnterprise);
         
         Employee employee = hospital.getEmployeeDirectory().createandaddEmployee("Boston Hospital Admin");
         UserAccount account = hospital.getUserAccountDirectory().createUserAccount("hadmin", "hadmin", employee, new HospitalAdminRole(), network.getName());

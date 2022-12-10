@@ -5,7 +5,7 @@
 package userinterface.BankManager;
 
 import Business.BankAccount.Loan;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.People.BirthMotherDirectory;
 import Business.UserAccount.UserAccount;
@@ -23,13 +23,13 @@ import javax.swing.table.DefaultTableModel;
 public class ViewBankAccountDetailsJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private UserAccount userAccount;
    
     /**
      * Creates new form DoctorWorkAreaJPanel
      */
-    public ViewBankAccountDetailsJPanel(JPanel userProcessContainer, UserAccount account, Enterprise enterprise) {
+    public ViewBankAccountDetailsJPanel(JPanel userProcessContainer, UserAccount account, Enterprise1 enterprise) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;

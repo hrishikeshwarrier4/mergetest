@@ -4,7 +4,7 @@
  */
 package userinterface.CounselorRole;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.People.BirthMotherDirectory;
 import Business.UserAccount.UserAccount;
@@ -22,7 +22,7 @@ public class BirthMotherRequestWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private Organization organization;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private UserAccount account;
     private BirthMotherDirectory birthMotherDirectory;
     
@@ -31,7 +31,7 @@ public class BirthMotherRequestWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form DoctorWorkAreaJPanel
      */
-    public BirthMotherRequestWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise) {
+    public BirthMotherRequestWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise1 enterprise) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;

@@ -7,7 +7,7 @@ package userinterface.BankManager;
 
 import Business.BankAccount.Loan;
 import static Business.ConfigureSystem.system;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Network.Network;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.BirthMotherToLoan;
@@ -35,9 +35,9 @@ public class BankAccountCreate extends javax.swing.JPanel {
     private HospitalAdminToBank req;
  
 
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     
-    public BankAccountCreate(UserAccount userAccount, JPanel userProcessContainer, Enterprise enterprise, HospitalAdminToBank req) {
+    public BankAccountCreate(UserAccount userAccount, JPanel userProcessContainer, Enterprise1 enterprise, HospitalAdminToBank req) {
         initComponents();
         this.userAccount = userAccount;
         this.req = req;

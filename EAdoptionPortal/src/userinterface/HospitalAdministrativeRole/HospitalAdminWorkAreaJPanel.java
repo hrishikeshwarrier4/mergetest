@@ -3,7 +3,7 @@
 package userinterface.HospitalAdministrativeRole;
 
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Network.Network;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
@@ -16,12 +16,12 @@ import javax.swing.JPanel;
 public class HospitalAdminWorkAreaJPanel extends javax.swing.JPanel {
     
     JPanel userProcessContainer;
-    Enterprise enterprise;
+    Enterprise1 enterprise;
     UserAccount account;
     EcoSystem system;
  
     /** Creates new form AdminWorkAreaJPanel */
-    public HospitalAdminWorkAreaJPanel(JPanel userProcessContainer, EcoSystem system, Enterprise enterprise, UserAccount account) {
+    public HospitalAdminWorkAreaJPanel(JPanel userProcessContainer, EcoSystem system, Enterprise1 enterprise, UserAccount account) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.enterprise = enterprise;

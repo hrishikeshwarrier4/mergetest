@@ -5,7 +5,7 @@
 package userinterface.BirthMotherRole;
 
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.BirthMotherOrganization;
 import Business.Organization.Organization;
 import Business.People.BirthMother;
@@ -22,7 +22,7 @@ import userinterface.Dashboard.BirthMotherDashboard;
 public class BirthMotherWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private UserAccount userAccount;
     private EcoSystem system;
     private Organization organization;
@@ -31,7 +31,7 @@ public class BirthMotherWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form CounselorWorkArea
      */
-    public BirthMotherWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem system) {
+    public BirthMotherWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise1 enterprise, EcoSystem system) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;

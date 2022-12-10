@@ -5,7 +5,7 @@
 package userinterface.CounselorRole;
 
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.ParentToCounselor;
@@ -22,12 +22,12 @@ public class ParentsRequestWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private Organization organization;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private UserAccount userAccount;
     /**
      * Creates new form DoctorWorkAreaJPanel
      */
-    public ParentsRequestWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise) {
+    public ParentsRequestWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise1 enterprise) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;

@@ -6,7 +6,7 @@ package userinterface.ParentsRole;
 
 
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.BirthMotherToParent;
@@ -23,12 +23,12 @@ public class ViewBirthMotherRequestsJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private Organization organization;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private UserAccount userAccount;
     private UserAccount counselorAccount;
     private EcoSystem system;
  
-    public ViewBirthMotherRequestsJPanel(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem system) {
+    public ViewBirthMotherRequestsJPanel(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise1 enterprise, EcoSystem system) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.organization = organization;

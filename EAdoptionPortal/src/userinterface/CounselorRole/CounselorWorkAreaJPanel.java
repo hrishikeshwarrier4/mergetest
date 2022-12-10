@@ -5,7 +5,7 @@
 package userinterface.CounselorRole;
 
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
@@ -19,13 +19,13 @@ public class CounselorWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private Organization organization;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private UserAccount userAccount;
 
     /**
      * Creates new form CounselorWorkArea
      */
-    public CounselorWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise) {
+    public CounselorWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise1 enterprise) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;

@@ -6,7 +6,7 @@ package userinterface.HospitalAdministrativeRole;
 
 import Business.BankAccount.Loan;
 import Business.EmailGeneration.EmailFormat;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Enterprise.FinancialEnterprise;
 import Business.Network.Network;
 import Business.Organization.BankManagerOrganization;
@@ -35,13 +35,13 @@ public class BirthMotherAcceptWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private UserAccount account;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private BirthMother birthMother;
     private Network network;
     /**
      * Creates new form DoctorWorkAreaJPanel
      */
-    public BirthMotherAcceptWorkAreaJPanel(JPanel userProcessContainer, Network network, UserAccount account, Enterprise enterprise) {
+    public BirthMotherAcceptWorkAreaJPanel(JPanel userProcessContainer, Network network, UserAccount account, Enterprise1 enterprise) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
@@ -54,8 +54,8 @@ public class BirthMotherAcceptWorkAreaJPanel extends javax.swing.JPanel {
     }
     
     public void populateComboBox(){
-        for(Enterprise e: network.getEnterpriseDirectory().getEnterpriseList()){
-            if(e.getEnterpriseType().getValue().equals(Enterprise.EnterpriseType.FinancialEnterprise.getValue())){
+        for(Enterprise1 e: network.getEnterpriseDirectory().getEnterpriseList()){
+            if(e.getEnterpriseType().getValue().equals(Enterprise1.EnterpriseType.FinancialEnterprise.getValue())){
                  bankComboBox.addItem(e);
                 }
         }

@@ -4,7 +4,7 @@
  */
 package userinterface.HospitalAdministrativeRole;
 
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.Organization.Organization.Type;
 import Business.Organization.OrganizationDirectory;
@@ -22,11 +22,11 @@ public class HospitalManageOrganizationJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private UserAccount account;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     /**
      * Creates new form ManageOrganizationJPanel
      */
-    public HospitalManageOrganizationJPanel(JPanel userProcessContainer,UserAccount account, Enterprise enterprise) {
+    public HospitalManageOrganizationJPanel(JPanel userProcessContainer,UserAccount account, Enterprise1 enterprise) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.account = account;

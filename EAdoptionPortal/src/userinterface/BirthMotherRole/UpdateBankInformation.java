@@ -6,7 +6,7 @@
 package userinterface.BirthMotherRole;
 
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.People.BirthMother;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
@@ -32,7 +32,7 @@ public class UpdateBankInformation extends javax.swing.JPanel {
     private String passportNumber;
     private String username;
     private String docPath;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     
     public UpdateBankInformation(UserAccount userAccount, JPanel userProcessContainer, EcoSystem system) {
         initComponents();

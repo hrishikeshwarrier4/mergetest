@@ -5,7 +5,7 @@
 package userinterface.ParentsRole;
 
 import static Business.ConfigureSystem.system;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.People.Parents;
 import Business.UserAccount.UserAccount;
@@ -24,12 +24,12 @@ public class ParentsWorkAreaJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private Organization organization;
     private UserAccount userAccount;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     private Parents parents;
     /**
      * Creates new form CounselorWorkArea
      */
-    public ParentsWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, UserAccount account, Organization organization) {
+    public ParentsWorkAreaJPanel(JPanel userProcessContainer, Enterprise1 enterprise, UserAccount account, Organization organization) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;

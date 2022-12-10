@@ -6,7 +6,7 @@ package userinterface.SystemAdminWorkArea;
 
 import Business.EcoSystem;
 import Business.People.Employee;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Network.Network;
 import Business.Role.FinanceAdminRole;
 import Business.Role.HospitalAdminRole;
@@ -49,7 +49,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
         for (Network network : system.getNetworkList()) {
-            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+            for (Enterprise1 enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
                 for (UserAccount userAccount : enterprise.getUserAccountDirectory().getUserAccountList()) {
                     Object[] row = new Object[3];
                     row[0] = enterprise.getName();
@@ -73,7 +73,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
     private void populateEnterpriseComboBox(Network network){
         enterpriseJComboBox.removeAllItems();
         
-        for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()){
+        for (Enterprise1 enterprise : network.getEnterpriseDirectory().getEnterpriseList()){
             enterpriseJComboBox.addItem(enterprise);
         }
         
@@ -269,7 +269,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
     
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
         
-        Enterprise enterprise = (Enterprise) enterpriseJComboBox.getSelectedItem();
+        Enterprise1 enterprise = (Enterprise1) enterpriseJComboBox.getSelectedItem();
         Network n = (Network)networkJComboBox.getSelectedItem();
         String username = usernameJTextField.getText();
         String password = String.valueOf(passwordJPasswordField.getPassword());
@@ -299,12 +299,12 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
             
         } 
         if(enterprise.getUserAccountDirectory().checkIfUsernameIsUnique(username)){
-        if(enterprise.getEnterpriseType().equals(Enterprise.EnterpriseType.Hospital)){
+        if(enterprise.getEnterpriseType().equals(Enterprise1.EnterpriseType.Hospital)){
             
             Employee employee = enterprise.getEmployeeDirectory().createandaddEmployee(name);
             UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new HospitalAdminRole(), n.getName());
         }
-        else if(enterprise.getEnterpriseType().equals(Enterprise.EnterpriseType.FinancialEnterprise)){
+        else if(enterprise.getEnterpriseType().equals(Enterprise1.EnterpriseType.FinancialEnterprise)){
             Employee employee = enterprise.getEmployeeDirectory().createandaddEmployee(name);
             UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new FinanceAdminRole(), n.getName());
         }

@@ -6,7 +6,7 @@
 package userinterface.SystemAdminWorkArea;
 
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Network.Network;
 import Business.Organization.Organization;
 import java.awt.CardLayout;
@@ -36,11 +36,11 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     public void populateTree(){
         DefaultTreeModel model=(DefaultTreeModel)jTree.getModel();
         ArrayList<Network> networkList=ecosystem.getNetworkList();
-        ArrayList<Enterprise> enterpriseList;
+        ArrayList<Enterprise1> enterpriseList;
         ArrayList<Organization> organizationList;
         
         Network network;
-        Enterprise enterprise;
+        Enterprise1 enterprise;
         Organization organization;
         
         DefaultMutableTreeNode networks=new DefaultMutableTreeNode("Networks");

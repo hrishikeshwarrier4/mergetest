@@ -5,7 +5,7 @@
 package userinterface.BankManager;
 
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
@@ -21,11 +21,11 @@ public class BankManagerWorkAreaJPanel extends javax.swing.JPanel {
     private Organization organization;
     private UserAccount userAccount;
     private EcoSystem system;
-    private Enterprise enterprise;
+    private Enterprise1 enterprise;
     /**
      * Creates new form CounselorWorkArea
      */
-    public BankManagerWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, EcoSystem system, Enterprise enterprise) {
+    public BankManagerWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, EcoSystem system, Enterprise1 enterprise) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;

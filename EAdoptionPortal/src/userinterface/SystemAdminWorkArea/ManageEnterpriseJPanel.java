@@ -5,7 +5,7 @@
 package userinterface.SystemAdminWorkArea;
 
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Business.Enterprise.Enterprise1;
 import Business.Network.Network;
 import Business.Validations.ValidateStrings;
 import java.awt.CardLayout;
@@ -42,7 +42,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
         for (Network network : system.getNetworkList()) {
-            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+            for (Enterprise1 enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
                 Object[] row = new Object[3];
                 row[0] = enterprise.getName();
                 row[1] = network.getName();
@@ -61,7 +61,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
             networkJComboBox.addItem(network);
         }
 
-        for (Enterprise.EnterpriseType type : Enterprise.EnterpriseType.values()) {
+        for (Enterprise1.EnterpriseType type : Enterprise1.EnterpriseType.values()) {
             enterpriseTypeJComboBox.addItem(type);
         }
 
@@ -211,7 +211,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
 
         Network network = (Network) networkJComboBox.getSelectedItem();
-        Enterprise.EnterpriseType type = (Enterprise.EnterpriseType) enterpriseTypeJComboBox.getSelectedItem();
+        Enterprise1.EnterpriseType type = (Enterprise1.EnterpriseType) enterpriseTypeJComboBox.getSelectedItem();
 
         if (network == null || type == null) {
             JOptionPane.showMessageDialog(null, "Invalid Input!");
