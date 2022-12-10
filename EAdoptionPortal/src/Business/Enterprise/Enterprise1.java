@@ -12,7 +12,7 @@ import Business.Organization.OrganizationDirectory;
  *
  * @author hrishikeshwarrier
  */
-public abstract class Enterprise extends Organization{
+public abstract class Enterprise1 extends Organization{
     
     private EnterpriseType enterpriseType;
     private OrganizationDirectory organizationDirectory;
@@ -47,7 +47,7 @@ public abstract class Enterprise extends Organization{
         this.enterpriseType = enterpriseType;
     }
     
-    public Enterprise(String name,EnterpriseType type){
+    public Enterprise1(String name,EnterpriseType type){
         super(name);
         this.enterpriseType=type;
         organizationDirectory=new OrganizationDirectory();
