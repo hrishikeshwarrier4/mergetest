@@ -12,24 +12,40 @@ import java.util.ArrayList;
  *
  * @author nihil
  */
-public class InsuranceManager extends Employees {
-    public String InsuranceName;
+public class Banker extends Employees{
+
+   public String BankName;
    public int workRequestcount;
    public int maxFunding;
    public String location;
    
    private ArrayList<BirthMotherLoan> acceptedWorkRequests;
    private ArrayList<BirthMotherLoan> rejectedWorkRequests;
-
-    public String getInsuranceName() {
-        return InsuranceName;
-    }
-
-    public void setInsuranceName(String InsuranceName) {
-        this.InsuranceName = InsuranceName;
-    }
-
    
+
+    public Banker(String BankName, int workRequestcount, int maxFunding, String location) {
+        super();
+        this.BankName = BankName;
+        this.workRequestcount = workRequestcount;
+        this.maxFunding = maxFunding;
+        this.location = location;
+    }
+    
+    public Banker() {
+        super();
+        this.BankName = new String();
+        this.workRequestcount = new Integer(100);
+        this.maxFunding = new Integer(100);
+        this.location = location;
+    }
+
+    public String getBankName() {
+        return BankName;
+    }
+
+    public void setBankName(String BankName) {
+        this.BankName = BankName;
+    }
 
     public int getWorkRequestcount() {
         return workRequestcount;
@@ -55,21 +71,10 @@ public class InsuranceManager extends Employees {
         this.location = location;
     }
 
-    public ArrayList<BirthMotherLoan> getAcceptedWorkRequests() {
-        return acceptedWorkRequests;
-    }
 
-    public void setAcceptedWorkRequests(ArrayList<BirthMotherLoan> acceptedWorkRequests) {
-        this.acceptedWorkRequests = acceptedWorkRequests;
-    }
+  
+   
+   
 
-    public ArrayList<BirthMotherLoan> getRejectedWorkRequests() {
-        return rejectedWorkRequests;
-    }
-
-    public void setRejectedWorkRequests(ArrayList<BirthMotherLoan> rejectedWorkRequests) {
-        this.rejectedWorkRequests = rejectedWorkRequests;
-    }
-     
     
 }

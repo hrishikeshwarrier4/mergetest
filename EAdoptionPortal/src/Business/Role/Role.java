@@ -7,12 +7,12 @@ package Business.Role;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
+import Business.UserAccount.UserAcc;
 import javax.swing.JPanel;
 
 /**
  *
- * @author hrishikeshwarrier
+ * @author nihil
  */
 public abstract class Role {
     
@@ -23,7 +23,8 @@ public abstract class Role {
         InsuranceManager("InsuranceManager"),
         HospitalAdmin ("HospitalAdmin"),
         BirthMotherRole("BirthMother"),
-        ParentsRole("Parents");
+        ParentsRole("Parents"),
+        LawyerRole("Lawyer");
         
         private String value;
         private RoleType(String value){
@@ -41,7 +42,7 @@ public abstract class Role {
     }
     
     public abstract JPanel createWorkArea(JPanel userProcessContainer, 
-            UserAccount account, 
+            UserAcc account, 
             Organization organization, 
             Enterprise enterprise, 
             EcoSystem business);

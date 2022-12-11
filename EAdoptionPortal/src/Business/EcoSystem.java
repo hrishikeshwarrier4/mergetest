@@ -5,7 +5,7 @@
  */
 package Business;
 
-import Business.Network.Network;
+import Business.Network.Networking;
 import Business.Organization.Organization;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
@@ -13,12 +13,12 @@ import java.util.ArrayList;
 
 /**
  *
- * @author hrishikeshwarrier
+ * @author patil
  */
 public class EcoSystem extends Organization{
     
     private static EcoSystem system;
-    private ArrayList<Network> networkList;
+    private ArrayList<Networking> networkList;
     public static EcoSystem getInstance(){
         if(system==null){
             system=new EcoSystem();
@@ -28,11 +28,11 @@ public class EcoSystem extends Organization{
     
     private EcoSystem(){
         super(null);
-        networkList=new ArrayList<Network>();
+        networkList=new ArrayList<Networking>();
     }
     
-    public Network createAndAddNetwork(){
-        Network network=new Network();
+    public Networking createAndAddNetwork(){
+        Networking network=new Networking();
         networkList.add(network);
         return network;
     }
@@ -47,18 +47,18 @@ public class EcoSystem extends Organization{
 
     
     
-    public ArrayList<Network> getNetworkList() {
+    public ArrayList<Networking> getNetworkList() {
         return networkList;
     }
     
-    public Network addNetwork()
+    public Networking addNetwork()
     {
-        Network network = new Network();
+        Networking network = new Networking();
         networkList.add(network);
         return network;
     }
 
-    public void setNetworkList(ArrayList<Network> networkList) {
+    public void setNetworkList(ArrayList<Networking> networkList) {
         this.networkList = networkList;
     }
     

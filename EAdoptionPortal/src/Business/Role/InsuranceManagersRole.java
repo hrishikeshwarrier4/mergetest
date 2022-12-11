@@ -1,6 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 package Business.Role;
@@ -9,17 +8,21 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAcc;
+import userinterface.HospitalAdministrativeRole.HospitalAdminWorkAreaJPanel;
 import javax.swing.JPanel;
-import userinterface.BirthMotherRole.BirthMotherWorkAreaJPanel;
+import userinterface.InsuranceManger.ViewInsuranceApplicationWorkAreaJPanel;
 
 /**
  *
  * @author nihil
  */
-public class BirthMotherRole extends Role{
-      @Override
+public class InsuranceManagersRole extends Role{
+
+    @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new BirthMotherWorkAreaJPanel(userProcessContainer, account, organization, enterprise, business);
+        return new ViewInsuranceApplicationWorkAreaJPanel(userProcessContainer, enterprise, account);
     }
+
+    
     
 }

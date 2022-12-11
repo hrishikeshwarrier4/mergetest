@@ -4,15 +4,15 @@
  */
 package Business.People;
 
-import Business.BankAccount.Loan;
-import Business.Insurance.Insurance;
+import Business.BankAccount.LoanAccount;
+import Business.Insurance.InsuranceAccount;
 import java.util.ArrayList;
 import java.util.Random;
 
 
 /**
  *
- * @author hrishikeshwarrier
+ * @author nihil
  */
 public class BirthMother {
    
@@ -36,7 +36,7 @@ public class BirthMother {
     private String address;
     private String counselor;
     private ArrayList<Parents> acceptedParents;
-    private Insurance insurance;
+    private InsuranceAccount insurance;
     private Parents finalizedParent;
    
     
@@ -62,7 +62,7 @@ public class BirthMother {
         this.contactMother = contactMother;
     }
     
-    private Loan loanaccount;
+    private LoanAccount loanaccount;
 
     public int getRequiredFund() {
         return requiredFund;
@@ -133,7 +133,7 @@ public class BirthMother {
         this.parentAidfund = parentAidfund;
     }
 
-    public Loan getLoanaccount() {
+    public LoanAccount getLoanaccount() {
         return loanaccount;
     }
 
@@ -145,7 +145,7 @@ public class BirthMother {
         this.finalizedParent = finalizedParent;
     }
 
-    public void setLoanaccount(Loan loanaccount) {
+    public void setLoanaccount(LoanAccount loanaccount) {
         this.loanaccount = loanaccount;
     }
 
@@ -170,11 +170,11 @@ public class BirthMother {
         this.counselor = counselor;
     }
 
-    public Insurance getInsurance() {
+    public InsuranceAccount getInsurance() {
         return insurance;
     }
 
-    public void setInsurance(Insurance insurance) {
+    public void setInsurance(InsuranceAccount insurance) {
         this.insurance = insurance;
     }
 
@@ -231,8 +231,8 @@ public class BirthMother {
         this.emailId =new String();
         this.password =new String();
         this.username =new String();
-        this.loanaccount = new Loan();
-        this.insurance = new Insurance();
+        this.loanaccount = new LoanAccount();
+        this.insurance = new InsuranceAccount();
         acceptedParents = new ArrayList<>();
      this.requiredFund =0;
      this.insuranceAmount =0;

@@ -10,7 +10,7 @@ import java.util.Random;
 
 /**
  *
- * @author hrishikeshwarrier
+ * @author nihil
  */
 public class Parents {
     
@@ -23,6 +23,7 @@ public class Parents {
 
     private String address;
     private String counselor;
+    private String lawyer;
     private int currentFunds;
     private String username;
     private BirthMother birthMother;
@@ -146,11 +147,20 @@ public class Parents {
         this.promises = promises;
         this.worstCaseScenerio = worstCaseScenerio;
         this.counselor = new String();
+        this.lawyer = new String();
         this.isAvailable = false;
     }
 
     public String getEmail() {
         return email;
+    }
+
+    public String getLawyer() {
+        return lawyer;
+    }
+
+    public void setLawyer(String lawyer) {
+        this.lawyer = lawyer;
     }
 
     public String getCounselor() {

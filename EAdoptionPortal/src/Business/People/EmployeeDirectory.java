@@ -8,14 +8,17 @@ import java.util.ArrayList;
 
 /**
  *
- * @author hrishikeshwarrier
+ * @author nihil
  */
 public class EmployeeDirectory {
  
-    private ArrayList<Employee> employeeList;
-    private ArrayList<Counsellor> counselorlist;
-    private ArrayList<BankManager> bankManagerList;
+    private ArrayList<Employees> employeeList;
+    private ArrayList<Counselor> counselorlist;
+    private ArrayList<Banker> bankManagerList;
     private ArrayList<InsuranceManager> insuranceManagerList;
+    private ArrayList<Lawyer> lawyerList;
+
+
     
     
 
@@ -23,28 +26,34 @@ public class EmployeeDirectory {
         counselorlist = new ArrayList<>();
         bankManagerList = new ArrayList<>();
         insuranceManagerList = new ArrayList<>();
-                
+        lawyerList = new ArrayList<>();        
                 
         employeeList = new ArrayList();
     }
+    public ArrayList<Lawyer> getLawyerList() {
+        return lawyerList;
+    }
 
-    public ArrayList<Employee> getEmployeeList() {
+    public void setLawyerList(ArrayList<Lawyer> lawyerList) {
+        this.lawyerList = lawyerList;
+    }
+    public ArrayList<Employees> getEmployeeList() {
         return employeeList;
     }
 
-    public void setEmployeeList(ArrayList<Employee> employeeList) {
+    public void setEmployeeList(ArrayList<Employees> employeeList) {
         this.employeeList = employeeList;
     }
     
-    public Employee createandaddEmployee (String name){
-        Employee em = new Employee();
+    public Employees createandaddEmployee (String name){
+        Employees em = new Employees();
         em.setName(name);
         employeeList.add(em);
         return em;
     }
     
-    public Counsellor createandaddCounselor (String name){
-        Counsellor em = new Counsellor();
+    public Counselor createandaddCounselor (String name){
+        Counselor em = new Counselor();
         em.setName(name);
         counselorlist.add(em);
         return em;
@@ -56,26 +65,26 @@ public class EmployeeDirectory {
         return em;
     }
 
-    public BankManager createandaddBankManager (String name){
-        BankManager em = new BankManager();
+    public Banker createandaddBankManager (String name){
+        Banker em = new Banker();
         em.setName(name);
         bankManagerList.add(em);
         return em;
     }
 
-    public ArrayList<Counsellor> getCounselorlist() {
+    public ArrayList<Counselor> getCounselorlist() {
         return counselorlist;
     }
 
-    public void setCounselorlist(ArrayList<Counsellor> counselorlist) {
+    public void setCounselorlist(ArrayList<Counselor> counselorlist) {
         this.counselorlist = counselorlist;
     }
 
-    public ArrayList<BankManager> getBankManagerList() {
+    public ArrayList<Banker> getBankManagerList() {
         return bankManagerList;
     }
 
-    public void setBankManagerList(ArrayList<BankManager> bankManagerList) {
+    public void setBankManagerList(ArrayList<Banker> bankManagerList) {
         this.bankManagerList = bankManagerList;
     }
 
@@ -86,6 +95,11 @@ public class EmployeeDirectory {
     public void setInsuranceManagerList(ArrayList<InsuranceManager> insuranceManagerList) {
         this.insuranceManagerList = insuranceManagerList;
     }
-       
+    public Lawyer createandaddLawyer (String name){
+        Lawyer em = new Lawyer();
+        em.setName(name);
+        lawyerList.add(em);
+        return em;
+    } 
     
 }
